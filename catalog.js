@@ -777,5 +777,55 @@ window.DEMOS = [
     },
     "src": "assets/videos/demo-31.mp4?v=compressed-1",
     "poster": "assets/posters/demo-31.jpg"
+  },
+  {
+    "id": "demo-32",
+    "path": "revo3_retargeting.mp4",
+    "duration": 18.9,
+    "size": 924108,
+    "codec_name": "h264",
+    "codec_type": "video",
+    "width": 568,
+    "height": 320,
+    "category": "retargeting",
+    "title": {
+      "zh": "Manus 手套与真机动作重定向",
+      "en": "Manus glove-to-robot retargeting"
+    },
+    "caption": {
+      "zh": "佩戴 Manus 手套的手与 Revo3 真机同框展示，连续切换张手、握合和单指动作，直观看到人手姿态到机器人手指的映射。",
+      "en": "A Manus-gloved hand and the physical Revo3 appear side by side, switching between open-hand, closing and individual-finger gestures to show human-to-robot motion mapping."
+    },
+    "tag": {
+      "zh": "真机 · 遥操作",
+      "en": "Real robot · teleoperation"
+    },
+    "src": "assets/videos/demo-32.mp4?v=compressed-1",
+    "poster": "assets/posters/demo-32.jpg"
+  },
+  {
+    "id": "demo-33",
+    "path": "revo3-半圈往复转笔.mp4",
+    "duration": 18.0,
+    "size": 3686745,
+    "codec_name": "h264",
+    "codec_type": "video",
+    "width": 640,
+    "height": 640,
+    "category": "强化学习",
+    "title": {
+      "zh": "半圈往复转笔",
+      "en": "Back-and-forth half-turn pen rotation"
+    },
+    "caption": {
+      "zh": "仿真灵巧手通过手指交替支撑和调整接触，使黄色笔状物体在指间做半圈往复旋转，展示连续的掌内操作。",
+      "en": "A simulated dexterous hand alternates finger support and contact placement to rotate a yellow pen-shaped object back and forth through half turns."
+    },
+    "tag": {
+      "zh": "仿真",
+      "en": "Simulation"
+    },
+    "src": "assets/videos/demo-33.mp4?v=compressed-1",
+    "poster": "assets/posters/demo-33.jpg"
   }
 ];
