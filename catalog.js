@@ -827,5 +827,30 @@ window.DEMOS = [
     },
     "src": "assets/videos/demo-33.mp4?v=compressed-1",
     "poster": "assets/posters/demo-33.jpg"
+  },
+  {
+    "id": "demo-34",
+    "path": "伟钛视触觉可视化.mp4",
+    "category": "触觉",
+    "duration": 36.4,
+    "size": 69882050,
+    "codec_name": "h264",
+    "codec_type": "video",
+    "width": 3838,
+    "height": 2088,
+    "title": {
+      "zh": "伟钛视触觉多通道可视化",
+      "en": "Weitai multi-channel visuotactile visualization"
+    },
+    "caption": {
+      "zh": "五路视触觉画面与实时力响应曲线并排显示，同时呈现触觉图像、marker displacement 和接触响应随时间的变化。",
+      "en": "Five visuotactile channels are displayed alongside real-time force-response curves, showing tactile images, marker displacement and changing contact responses over time."
+    },
+    "tag": {
+      "zh": "真实传感器 · 可视化",
+      "en": "Real sensors · visualization"
+    },
+    "src": "assets/videos/demo-34.mp4?v=compressed-1",
+    "poster": "assets/posters/demo-34.jpg"
   }
 ];
