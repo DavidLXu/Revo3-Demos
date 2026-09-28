@@ -125,31 +125,6 @@ window.DEMOS = [
     "poster": "assets/posters/demo-05.jpg"
   },
   {
-    "id": "demo-06",
-    "path": "优化生成/抓取集合.mp4",
-    "category": "优化生成",
-    "duration": 3.8,
-    "size": 6900984,
-    "codec_name": "hevc",
-    "codec_type": "video",
-    "width": 2560,
-    "height": 1440,
-    "title": {
-      "zh": "抓取姿态集合",
-      "en": "A collection of generated grasps"
-    },
-    "caption": {
-      "zh": "旋转视角查看多种物体与对应的灵巧手抓取配置，呈现不同接触位置和手指姿态。",
-      "en": "A moving viewpoint surveys a collection of objects and their grasp configurations, revealing different contact placements and finger poses."
-    },
-    "tag": {
-      "zh": "仿真",
-      "en": "Simulation"
-    },
-    "src": "assets/videos/demo-06.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-06.jpg"
-  },
-  {
     "id": "demo-07",
     "path": "强化学习/RL-2x-nocap.mp4",
     "category": "强化学习",
