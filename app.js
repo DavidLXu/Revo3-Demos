@@ -11,8 +11,10 @@
  ];
  let lang='zh';try{lang=localStorage.getItem('revo3-language')||'zh'}catch{}if(!['zh','en'].includes(lang))lang='zh';
  let selected='all';const grid=document.querySelector('#demo-grid'),nav=document.querySelector('#categories');
- const order=[10,25,14,21,4,5,1,24,26,27,28,29,30,12,13,8,7,9,11,15,16,19,20,22,17,18,23,3,6,2];
+ const order=[10,25,14,21,4,5,1,24,26,27,28,29,30,12,13,8,7,9,11,31,15,16,19,20,22,17,18,23,3,6,2];
  const demos=order.map(n=>window.DEMOS.find(d=>d.id===`demo-${String(n).padStart(2,'0')}`));
+ const categories=d=>d.categories||[d.category];
+ const belongs=(d,category)=>categories(d).includes(category);
  const text=(zh,en)=>lang==='zh'?zh:en;
  const duration=d=>`${Math.floor(d/60)}:${String(Math.floor(d%60)).padStart(2,'0')}`;
  function pauseAll(except){document.querySelectorAll('video').forEach(v=>{if(v!==except)v.pause()})}
@@ -28,15 +30,15 @@
   document.querySelector('.index-mark strong').textContent=demos.length;
   document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===lang));
   nav.setAttribute('aria-label',text('演示分类','Demo categories'));nav.replaceChildren();
-  groups.forEach(g=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed',g[0]===selected);b.append(document.createTextNode(g[lang==='zh'?1:2]));const count=document.createElement('small');count.textContent=g[0]==='all'?demos.length:demos.filter(d=>d.category===g[0]).length;b.append(count);b.addEventListener('click',()=>{selected=g[0];render();nav.querySelector('[aria-pressed=true]').focus({preventScroll:true})});nav.append(b)});
+  groups.forEach(g=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed',g[0]===selected);b.append(document.createTextNode(g[lang==='zh'?1:2]));const count=document.createElement('small');count.textContent=g[0]==='all'?demos.length:demos.filter(d=>belongs(d,g[0])).length;b.append(count);b.addEventListener('click',()=>{selected=g[0];render();nav.querySelector('[aria-pressed=true]').focus({preventScroll:true})});nav.append(b)});
   const g=groups.find(g=>g[0]===selected);document.querySelector('#section-kicker').textContent=selected==='all'?'THE DEMO COLLECTION':`${String(groups.indexOf(g)).padStart(2,'0')} / REVO3 DEMOS`;
   document.querySelector('#section-title').textContent=g[lang==='zh'?1:2];document.querySelector('#section-description').textContent=g[lang==='zh'?3:4];
-  grid.replaceChildren();demos.filter(d=>selected==='all'||d.category===selected).forEach((d,i)=>{
+  grid.replaceChildren();demos.filter(d=>selected==='all'||belongs(d,selected)).forEach((d,i)=>{
    const card=document.createElement('article');card.className='demo';card.id=d.id;
    const wrap=document.createElement('div');wrap.className='video-wrap';const img=document.createElement('img');img.src=d.poster;img.alt=d.title[lang];img.className='poster';img.loading=i<2?'eager':'lazy';wrap.append(img);
    const b=document.createElement('button');b.type='button';b.className='play-button';b.setAttribute('aria-label',text('播放：','Play: ')+d.title[lang]);b.innerHTML='<span class="play-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z"/></svg></span>';b.addEventListener('click',()=>play(d,wrap,b));wrap.append(b);
    const time=document.createElement('span');time.className='duration';time.textContent=duration(d.duration);wrap.append(time);
-   const copy=document.createElement('div');copy.className='demo-copy';const meta=document.createElement('p');meta.className='demo-meta';const group=groups.find(g=>g[0]===d.category);meta.textContent=`${group[lang==='zh'?1:2]} / ${d.tag[lang]}`;
+   const copy=document.createElement('div');copy.className='demo-copy';const meta=document.createElement('p');meta.className='demo-meta';const labels=categories(d).map(category=>groups.find(g=>g[0]===category)[lang==='zh'?1:2]);meta.textContent=`${labels.join(' · ')} / ${d.tag[lang]}`;
    const title=document.createElement('h3');title.textContent=d.title[lang];const cap=document.createElement('p');cap.className='caption';cap.textContent=d.caption[lang];
    const links=document.createElement('div');links.className='demo-links';const open=document.createElement('a');open.href=d.src;open.target='_blank';open.rel='noopener';open.textContent=text('打开视频 ↗','Open video ↗');const download=document.createElement('a');download.href=d.src;download.download=d.title[lang]+'.mp4';download.textContent=text('下载视频 ↓','Download video ↓');links.append(open,download);copy.append(meta,title,cap,links);card.append(wrap,copy);grid.append(card);
   });

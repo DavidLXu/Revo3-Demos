@@ -484,6 +484,10 @@ window.DEMOS = [
     "codec_type": "video",
     "width": 1540,
     "height": 1052,
+    "categories": [
+      "触觉",
+      "强化学习"
+    ],
     "title": {
       "zh": "带触觉观测的掌内转球",
       "en": "In-hand ball rotation with tactile observations"
@@ -748,5 +752,30 @@ window.DEMOS = [
     },
     "src": "assets/videos/demo-30.mp4?v=compressed-1",
     "poster": "assets/posters/demo-30.jpg"
+  },
+  {
+    "id": "demo-31",
+    "path": "来回抛球.mp4",
+    "category": "强化学习",
+    "duration": 30.025,
+    "size": 17223433,
+    "codec_type": "video",
+    "codec_name": "h264",
+    "width": 1280,
+    "height": 720,
+    "title": {
+      "zh": "双手来回抛接球",
+      "en": "Bimanual ball toss and catch"
+    },
+    "caption": {
+      "zh": "仿真中双臂与灵巧手配合，将小球在左右手之间来回抛接，展示接球位置调整、手指开合与抛出时机的协同。",
+      "en": "Two simulated arms and dexterous hands toss a ball back and forth, coordinating receiving positions, finger opening and closing, and release timing."
+    },
+    "tag": {
+      "zh": "仿真",
+      "en": "Simulation"
+    },
+    "src": "assets/videos/demo-31.mp4?v=compressed-1",
+    "poster": "assets/posters/demo-31.jpg"
   }
 ];
