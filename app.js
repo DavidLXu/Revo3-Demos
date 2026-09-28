@@ -18,11 +18,38 @@
  const text=(zh,en)=>lang==='zh'?zh:en;
  const duration=d=>`${Math.floor(d/60)}:${String(Math.floor(d%60)).padStart(2,'0')}`;
  function pauseAll(except){document.querySelectorAll('video').forEach(v=>{if(v!==except)v.pause()})}
- function play(d,wrap,button){
-  pauseAll();const v=document.createElement('video');v.controls=true;v.playsInline=true;v.preload='metadata';v.poster=d.poster;v.src=d.src;v.setAttribute('aria-label',d.title[lang]);
-  v.addEventListener('play',()=>pauseAll(v));v.addEventListener('error',()=>{if(wrap.querySelector('.play-error'))return;const e=document.createElement('div');e.className='play-error';e.textContent=text('视频暂时无法加载，请点击下方“打开视频”查看。','The video could not load. Use “Open video” below.');wrap.append(e)});
-  wrap.replaceChildren(v);v.play().catch(()=>{});v.focus();
+ const player=document.createElement('dialog');player.className='showcase';player.setAttribute('aria-labelledby','showcase-title');
+ player.innerHTML='<div class="showcase-head"><div><p class="showcase-count"></p><h2 id="showcase-title"></h2></div><button class="showcase-close" type="button"></button></div><video controls playsinline preload="auto"></video><p class="showcase-status" role="status"></p><div class="showcase-controls"><button class="showcase-prev" type="button"></button><button class="showcase-next" type="button"></button><label><input class="showcase-auto" type="checkbox" checked><span></span></label><button class="showcase-full" type="button"></button></div><p class="showcase-caption"></p><p class="showcase-upnext"></p>';
+ document.body.append(player);
+ const screen=player.querySelector('video'),auto=player.querySelector('.showcase-auto'),status=player.querySelector('.showcase-status');
+ let playlist=[],position=0,returnFocus=null,skipTimer=null,wakeLock=null,loadVersion=0;
+ async function keepAwake(){if(!player.open||document.hidden||wakeLock||!navigator.wakeLock)return;try{const lock=await navigator.wakeLock.request('screen');if(!player.open){await lock.release();return}wakeLock=lock;lock.addEventListener('release',()=>{wakeLock=null})}catch{}}
+ function showVideo(index){
+  clearTimeout(skipTimer);position=(index+playlist.length)%playlist.length;const d=playlist[position],version=++loadVersion;
+  player.querySelector('#showcase-title').textContent=d.title[lang];
+  player.querySelector('.showcase-count').textContent=`${position+1} / ${playlist.length} · ${groups.find(g=>g[0]===selected)[lang==='zh'?1:2]}`;
+  player.querySelector('.showcase-caption').textContent=d.caption[lang];
+  player.querySelector('.showcase-upnext').textContent=text('下一段：','Up next: ')+playlist[(position+1)%playlist.length].title[lang];
+  status.textContent='';screen.poster=d.poster;screen.src=d.src;screen.setAttribute('aria-label',d.title[lang]);
+  screen.play().catch(()=>{if(player.open&&version===loadVersion)status.textContent=text('点击视频中的播放按钮继续。','Press play in the video to continue.')});
  }
+ function play(d,wrap,button){
+  pauseAll();playlist=demos.filter(item=>selected==='all'||belongs(item,selected));returnFocus=button;
+  player.querySelector('.showcase-close').textContent=text('关闭 ✕','Close ✕');
+  player.querySelector('.showcase-prev').textContent=text('← 上一段','← Previous');player.querySelector('.showcase-next').textContent=text('下一段 →','Next →');
+  player.querySelector('.showcase-controls label span').textContent=text('自动连播 · 循环','Autoplay · Loop');
+  player.querySelector('.showcase-full').textContent=text('全屏展示','Full screen');
+  player.showModal();document.body.classList.add('showcase-open');showVideo(playlist.findIndex(item=>item.id===d.id));keepAwake();
+ }
+ player.querySelector('.showcase-close').addEventListener('click',()=>player.close());
+ player.querySelector('.showcase-prev').addEventListener('click',()=>showVideo(position-1));
+ player.querySelector('.showcase-next').addEventListener('click',()=>showVideo(position+1));
+ player.querySelector('.showcase-full').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(player.requestFullscreen)await player.requestFullscreen();else status.textContent=text('可使用视频播放器的全屏按钮。','Use the video player’s full-screen button.')}catch{status.textContent=text('可使用视频播放器的全屏按钮。','Use the video player’s full-screen button.')}});
+ screen.addEventListener('ended',()=>{if(player.open&&auto.checked)showVideo(position+1)});
+ screen.addEventListener('playing',()=>{status.textContent='';keepAwake()});
+ screen.addEventListener('error',()=>{if(!player.open)return;status.textContent=text('视频加载失败，可点击下一段。自动连播时将在 5 秒后跳过。','Video could not load. Choose Next; autoplay will skip it in 5 seconds.');if(auto.checked)skipTimer=setTimeout(()=>{if(player.open&&auto.checked)showVideo(position+1)},5000)});
+ auto.addEventListener('change',()=>{clearTimeout(skipTimer);if(auto.checked&&screen.ended)showVideo(position+1)});
+ player.addEventListener('close',()=>{++loadVersion;clearTimeout(skipTimer);screen.pause();screen.removeAttribute('src');screen.load();document.body.classList.remove('showcase-open');if(document.fullscreenElement===player)document.exitFullscreen().catch(()=>{});if(wakeLock)wakeLock.release().catch(()=>{});returnFocus?.focus({preventScroll:true})});
  function render(){
   pauseAll();document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.body.lang=lang;
   document.title=text('Revo3 灵巧手演示集合','Revo3 — Demo Collection');
@@ -44,5 +71,5 @@
   });
  }
  document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;try{localStorage.setItem('revo3-language',lang)}catch{}render()}));
- document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseAll()});render();
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden&&player.open)keepAwake();else if(document.hidden&&!player.open)pauseAll()});render();
 })();
