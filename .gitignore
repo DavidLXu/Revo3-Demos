@@ -1,0 +1,16 @@
+# Publish only the website and prepared browser media.
+/*
+!/.gitignore
+!/.nojekyll
+!/README.md
+!/index.html
+!/styles.css
+!/app.js
+!/catalog.js
+!/serve.py
+!/assets/
+/assets/*
+!/assets/videos/
+!/assets/posters/
+.DS_Store
+*.new.mp4
