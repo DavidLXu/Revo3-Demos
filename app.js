@@ -2,6 +2,7 @@
  const groups=[
  ['all','全部演示','All demos','从动作映射到全手触觉，浏览 7 个方向的真机、仿真与数据演示。','Browse real-robot, simulation and data demonstrations across seven directions.'],
  ['强化学习','强化学习','Reinforcement learning','掌内旋转、手臂协作与双手运动。保留训练过程和不同阶段的演示。','In-hand rotation, arm–hand coordination and bimanual motion, including work in training.'],
+ ['解魔方','解魔方','Rubik’s Cube solving','使用策略控制灵巧手完成魔方复原，观察动作序列与状态反馈。','Policy-controlled Rubik’s Cube solving with action sequences and state feedback.'],
  ['钢琴演奏','钢琴演奏','Piano performance','双臂与灵巧手协同演奏。包含运动学轨迹优化与按键训练演示，有原声的片段保留声音。','Coordinated piano playing with arms and dexterous hands, from kinematic trajectory optimization to key-press training. Original audio is preserved where available.'],
  ['模仿学习','模仿学习','Imitation learning','从桌面抓取到抽屉任务，观察示教驱动的操作与并行仿真回放。','Demonstration-driven manipulation, from tabletop grasps to drawer tasks and parallel simulated rollouts.'],
  ['触觉','触觉','Tactile sensing','观察接触位置、指尖形变与全手压力，以及操作过程中的同步数据。','Explore contact locations, fingertip deformation, whole-hand pressure and synchronized manipulation data.'],
@@ -11,7 +12,7 @@
  ];
  let lang='zh';try{lang=localStorage.getItem('revo3-language')||'zh'}catch{}if(!['zh','en'].includes(lang))lang='zh';
  let selected='all';const grid=document.querySelector('#demo-grid'),nav=document.querySelector('#categories');
- const order=[10,25,14,21,34,4,32,5,1,24,26,27,28,29,30,12,13,8,7,9,11,31,33,15,16,19,20,22,17,18,23,3,2];
+ const order=[10,35,25,14,21,34,4,32,5,1,24,26,27,28,29,30,12,13,8,7,9,11,31,33,15,16,19,20,22,17,18,23,3,2];
  const demos=order.map(n=>window.DEMOS.find(d=>d.id===`demo-${String(n).padStart(2,'0')}`));
  const categories=d=>d.categories||[d.category];
  const belongs=(d,category)=>categories(d).includes(category);

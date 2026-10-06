@@ -827,5 +827,34 @@ window.DEMOS = [
     },
     "src": "assets/videos/demo-34.mp4?v=compressed-1",
     "poster": "assets/posters/demo-34.jpg"
+  },
+  {
+    "id": "demo-35",
+    "path": "/Users/xulixin/Downloads/rubik-solving.mp4",
+    "category": "强化学习",
+    "categories": [
+      "强化学习",
+      "解魔方"
+    ],
+    "duration": 56.35,
+    "size": 9684247,
+    "codec_type": "video",
+    "codec_name": "h264",
+    "width": 1280,
+    "height": 768,
+    "title": {
+      "zh": "强化学习解魔方",
+      "en": "RL Rubik’s Cube solving"
+    },
+    "caption": {
+      "zh": "灵巧手根据策略序列执行 10 步打乱后的魔方复原，画面同步显示侧视、俯视、当前目标动作和状态读数。",
+      "en": "The dexterous hand executes a policy sequence to solve a Rubik’s Cube after a 10-move scramble, with side, overhead, action-goal and state readouts shown together."
+    },
+    "tag": {
+      "zh": "仿真 · 强化学习 · 解魔方",
+      "en": "Simulation · reinforcement learning · Rubik’s Cube"
+    },
+    "src": "assets/videos/demo-35.mp4?v=compressed-1",
+    "poster": "assets/posters/demo-35.jpg"
   }
 ];
