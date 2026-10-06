@@ -856,5 +856,33 @@ window.DEMOS = [
     },
     "src": "assets/videos/demo-35.mp4?v=compressed-1",
     "poster": "assets/posters/demo-35.jpg"
+  },
+  {
+    "id": "demo-36",
+    "path": "/Users/xulixin/强脑机器人算法Demo/高效采集数据.mp4",
+    "category": "数据采集",
+    "categories": [
+      "数据采集"
+    ],
+    "duration": 70.350295,
+    "size": 89956980,
+    "codec_type": "video",
+    "codec_name": "hevc",
+    "width": 1920,
+    "height": 1080,
+    "title": {
+      "zh": "高效多模态数据采集",
+      "en": "Efficient multimodal data collection"
+    },
+    "caption": {
+      "zh": "展示通过真人示教采集机器人操作数据的现场流程：操作者引导双手动作，机器人同步执行桌面任务，画面保留 10× 慢动作标注。",
+      "en": "A data-collection session for robot manipulation: a human guides bimanual actions while the robot executes the tabletop task, with a 10× slow-motion annotation retained in the footage."
+    },
+    "tag": {
+      "zh": "数据采集",
+      "en": "Data collection"
+    },
+    "src": "assets/videos/demo-36.mp4?v=compressed-1",
+    "poster": "assets/posters/demo-36.jpg"
   }
 ];
