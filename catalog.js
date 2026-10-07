@@ -489,12 +489,12 @@ window.DEMOS = [
     "width": 1280,
     "height": 720,
     "title": {
-      "zh": "真机指尖接触可视化",
-      "en": "Live fingertip contact visualization"
+      "zh": "指尖视触觉六维力／力矩可视化",
+      "en": "Visuotactile fingertip 6D force visualization"
     },
     "caption": {
-      "zh": "依次触碰 Revo3 指尖，屏幕中的三维手模型显示对应接触位置和方向箭头。",
-      "en": "Touches on the physical Revo3 fingertips are visualized as contact locations and directional arrows on a 3D hand model."
+      "zh": "根据 Revo3 指尖视触觉观测估算六维力／力矩，并在三维手模型上实时可视化。",
+      "en": "Six-axis forces and torques estimated from Revo3 fingertip visuotactile sensing, visualized live on a 3D hand model."
     },
     "tag": {
       "zh": "真机 · 触觉",
