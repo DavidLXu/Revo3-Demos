@@ -6,7 +6,7 @@
  ['解魔方','解魔方',"Rubik's cube",'使用策略控制灵巧手完成魔方复原，观察动作序列与状态反馈。','Policy-controlled Rubik’s Cube solving with action sequences and state feedback.'],
  ['钢琴演奏','钢琴演奏','Piano','双臂与灵巧手协同演奏。','Piano playing with coordinated arms and dexterous hands.'],
  ['模仿学习','模仿学习','Imitation learning','从桌面抓取到抽屉任务，观察示教驱动的操作与并行仿真回放。','Demonstration-driven manipulation, from tabletop grasps to drawer tasks and parallel simulated rollouts.'],
- ['触觉','触觉','Tactile sensing','观察接触位置、指尖形变与全手压力，以及操作过程中的同步数据。','Explore contact locations, fingertip deformation, whole-hand pressure and synchronized manipulation data.'],
+ ['触觉','触觉','tactile','观察接触位置、指尖形变与全手压力，以及操作过程中的同步数据。','Explore contact locations, fingertip deformation, whole-hand pressure and synchronized manipulation data.'],
  ['retargeting','动作重定向','Retargeting','将手套捕捉到的人手动作映射到 Revo3，展示手指跟随与拇指对指。','Map glove-captured human motion onto Revo3, including finger following and thumb opposition.'],
  ['优化生成','优化生成','Grasp generation','面向不同物体几何形状，展示生成的抓取姿态与接触配置。','Generated grasp poses and contact configurations for a variety of object geometries.'],
  ['Ego数据处理','Ego 数据处理','Ego data','将第一视角的人手操作重建为机器人可回放的手部和双臂动作。','Reconstruct egocentric demonstrations as hand and bimanual robot motion.']
