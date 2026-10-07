@@ -1,6 +1,6 @@
 (() => {
  const groups=[
- ['all','全部演示','All demos','从动作映射到全手触觉，浏览 8 个方向的真机、仿真与数据演示。','Browse real-robot, simulation and data demonstrations across eight directions.'],
+ ['all','全部演示','All demos','从动作映射到全手触觉，浏览 9 个方向的真机、仿真与数据演示。','Browse real-robot, simulation and data demonstrations across nine directions.'],
  ['强化学习','强化学习','Reinforcement learning','掌内旋转、手臂协作与双手运动。保留训练过程和不同阶段的演示。','In-hand rotation, arm–hand coordination and bimanual motion, including work in training.'],
  ['数据采集','数据采集','Data collection','从真人示教到机器人执行，浏览高效采集多模态操作数据的现场案例。','From human demonstration to robot execution, explore examples of efficient multimodal manipulation data collection.'],
  ['解魔方','解魔方','Rubik’s Cube solving','使用策略控制灵巧手完成魔方复原，观察动作序列与状态反馈。','Policy-controlled Rubik’s Cube solving with action sequences and state feedback.'],
