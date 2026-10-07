@@ -815,7 +815,7 @@ window.DEMOS = [
     "height": 2088,
     "title": {
       "zh": "伟钛视触觉多通道可视化",
-      "en": "Weitai multi-channel visuotactile visualization"
+      "en": "Visuotactile visualization"
     },
     "caption": {
       "zh": "五路视触觉画面与实时力响应曲线并排显示，同时呈现触觉图像、marker displacement 和接触响应随时间的变化。",
