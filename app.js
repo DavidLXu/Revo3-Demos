@@ -9,7 +9,7 @@
  ['触觉','触觉','Tactile sensing','观察接触位置、指尖形变与全手压力，以及操作过程中的同步数据。','Explore contact locations, fingertip deformation, whole-hand pressure and synchronized manipulation data.'],
  ['retargeting','动作重定向','Retargeting','将手套捕捉到的人手动作映射到 Revo3，展示手指跟随与拇指对指。','Map glove-captured human motion onto Revo3, including finger following and thumb opposition.'],
  ['优化生成','优化生成','Grasp generation','面向不同物体几何形状，展示生成的抓取姿态与接触配置。','Generated grasp poses and contact configurations for a variety of object geometries.'],
- ['Ego数据处理','Ego 数据处理','Ego data processing','将第一视角的人手操作重建为机器人可回放的手部和双臂动作。','Reconstruct egocentric demonstrations as hand and bimanual robot motion.']
+ ['Ego数据处理','Ego 数据处理','Ego data','将第一视角的人手操作重建为机器人可回放的手部和双臂动作。','Reconstruct egocentric demonstrations as hand and bimanual robot motion.']
  ];
  let lang='zh';try{lang=localStorage.getItem('revo3-language')||'zh'}catch{}if(!['zh','en'].includes(lang))lang='zh';
  let selected='all';const grid=document.querySelector('#demo-grid'),nav=document.querySelector('#categories');
