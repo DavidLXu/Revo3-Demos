@@ -264,12 +264,12 @@ window.DEMOS = [
       "en": "Bimanual piano simulation"
     },
     "caption": {
-      "zh": "从多个视角展示双臂与手指的键盘运动配合。视频标注为运动学轨迹优化的仿真演示。",
-      "en": "Multiple views show coordinated arm and finger movements over a keyboard. The video identifies this as a simulated kinematic trajectory optimization demonstration."
+      "zh": "双臂与手指协同演奏的仿真展示。",
+      "en": "Simulated piano playing with coordinated arms and fingers."
     },
     "tag": {
-      "zh": "仿真 · 轨迹优化",
-      "en": "Simulation · trajectory optimization"
+      "zh": "仿真",
+      "en": "Simulation"
     },
     "src": "assets/videos/demo-12.mp4?v=compressed-1",
     "poster": "assets/posters/demo-12.jpg"
@@ -289,8 +289,8 @@ window.DEMOS = [
       "en": "Piano key presses and training feedback"
     },
     "caption": {
-      "zh": "双手在仿真键盘上执行按键动作，高亮琴键与奖励曲线共同展示动作和训练反馈。",
-      "en": "Two simulated hands press highlighted piano keys while reward curves provide a simultaneous view of the training feedback."
+      "zh": "双手按键训练，实时显示奖励曲线。",
+      "en": "Piano key-press training with live reward curves."
     },
     "tag": {
       "zh": "仿真",
@@ -564,16 +564,16 @@ window.DEMOS = [
     "width": 1920,
     "height": 1080,
     "title": {
-      "zh": "Slow Boat to China｜双手钢琴仿真",
-      "en": "Slow Boat to China — bimanual piano"
+      "zh": "Slow Boat to China",
+      "en": "Slow Boat to China"
     },
     "caption": {
-      "zh": "以 Slow Boat to China 展示双臂与手指协同按键。多视角回放呈现键盘上的横向移动与手指配合，保留原视频音轨。",
-      "en": "A simulated performance of Slow Boat to China shows coordinated arm and finger motion. Multiple views reveal movement across the keyboard, with the original soundtrack preserved."
+      "zh": "双手钢琴演奏，多视角仿真回放。",
+      "en": "Simulated piano performance from multiple views."
     },
     "tag": {
-      "zh": "仿真 · 轨迹优化 · 有声",
-      "en": "Simulation · trajectory optimization · Audio"
+      "zh": "仿真 · 有声",
+      "en": "Simulation · Audio"
     },
     "src": "assets/videos/demo-24.mp4?v=compressed-1",
     "poster": "assets/posters/demo-24.jpg"
@@ -593,12 +593,12 @@ window.DEMOS = [
       "en": "Bach — Prelude and Fugue in F minor, BWV 881"
     },
     "caption": {
-      "zh": "以巴赫 F 小调前奏曲与赋格展示双手钢琴演奏。彩色琴键标出按键位置，侧视与俯视画面呈现双臂、手腕和手指的运动配合。",
-      "en": "A simulated performance of Bach’s Prelude and Fugue in F minor. Colored keys mark key presses, while side and overhead views show coordinated arm, wrist and finger motion."
+      "zh": "双手演奏巴赫，彩色琴键标出按键位置。",
+      "en": "Bach in simulation, with highlighted key presses."
     },
     "tag": {
-      "zh": "仿真 · 轨迹优化 · 有声",
-      "en": "Simulation · trajectory optimization · Audio"
+      "zh": "仿真 · 有声",
+      "en": "Simulation · Audio"
     },
     "src": "assets/videos/demo-25.mp4?v=compressed-1",
     "poster": "assets/posters/demo-25.jpg"
@@ -618,12 +618,12 @@ window.DEMOS = [
       "en": "Bach — English Suite No. 6: Gavotte"
     },
     "caption": {
-      "zh": "双手演奏巴赫第六英国组曲中的加沃特舞曲（BWV 811），从正面、侧面和俯视角度观察手指按键与双臂移动。",
-      "en": "The robot plays the Gavotte from Bach’s English Suite No. 6 (BWV 811) in simulation, with front, side and overhead views of finger presses and arm movement."
+      "zh": "双手演奏加沃特舞曲，BWV 811。",
+      "en": "A simulated performance of the Gavotte, BWV 811."
     },
     "tag": {
-      "zh": "仿真 · 轨迹优化 · 有声",
-      "en": "Simulation · trajectory optimization · Audio"
+      "zh": "仿真 · 有声",
+      "en": "Simulation · Audio"
     },
     "src": "assets/videos/demo-26.mp4?v=compressed-1",
     "poster": "assets/posters/demo-26.jpg"
@@ -643,12 +643,12 @@ window.DEMOS = [
       "en": "Miles Davis — All Blues"
     },
     "caption": {
-      "zh": "以 All Blues 展示双手在不同音区的按键配合。画面切换多个观察角度，配合原声呈现仿真演奏过程。",
-      "en": "A simulated performance of All Blues shows the hands coordinating across different keyboard ranges, with multiple viewpoints and the original soundtrack."
+      "zh": "双手跨音区配合演奏。",
+      "en": "Both hands coordinate across the keyboard."
     },
     "tag": {
-      "zh": "仿真 · 轨迹优化 · 有声",
-      "en": "Simulation · trajectory optimization · Audio"
+      "zh": "仿真 · 有声",
+      "en": "Simulation · Audio"
     },
     "src": "assets/videos/demo-27.mp4?v=compressed-1",
     "poster": "assets/posters/demo-27.jpg"
@@ -664,16 +664,16 @@ window.DEMOS = [
     "height": 1080,
     "category": "钢琴演奏",
     "title": {
-      "zh": "Black Pearl｜双手钢琴仿真",
-      "en": "Black Pearl — bimanual piano"
+      "zh": "Black Pearl",
+      "en": "Black Pearl"
     },
     "caption": {
-      "zh": "以 Black Pearl 展示双手钢琴仿真演奏。橙蓝色高亮区分双手的按键位置，多视角回放呈现手指动作与双臂在键盘上的移动。",
-      "en": "A simulated performance of Black Pearl uses orange and blue key highlights to distinguish the hands. Multiple views show finger motion and arm movement across the keyboard."
+      "zh": "橙蓝色琴键分别标出双手的按键位置。",
+      "en": "Orange and blue keys highlight each hand’s notes."
     },
     "tag": {
-      "zh": "仿真 · 轨迹优化 · 有声",
-      "en": "Simulation · trajectory optimization · Audio"
+      "zh": "仿真 · 有声",
+      "en": "Simulation · Audio"
     },
     "src": "assets/videos/demo-28.mp4?v=compressed-1",
     "poster": "assets/posters/demo-28.jpg"
@@ -689,16 +689,16 @@ window.DEMOS = [
     "height": 1080,
     "category": "钢琴演奏",
     "title": {
-      "zh": "What Is This Thing Called Love｜钢琴仿真",
-      "en": "What Is This Thing Called Love — piano simulation"
+      "zh": "What Is This Thing Called Love",
+      "en": "What Is This Thing Called Love"
     },
     "caption": {
-      "zh": "双手在不同音区配合演奏 What Is This Thing Called Love。侧视与俯视画面展示手腕位置调整、手指按键和双臂协同，保留原视频音轨。",
-      "en": "The hands coordinate across keyboard ranges in What Is This Thing Called Love. Side and overhead views show wrist repositioning, key presses and arm coordination, with the original soundtrack preserved."
+      "zh": "双臂与手指协同完成演奏。",
+      "en": "Coordinated arm and finger motion across the keyboard."
     },
     "tag": {
-      "zh": "仿真 · 轨迹优化 · 有声",
-      "en": "Simulation · trajectory optimization · Audio"
+      "zh": "仿真 · 有声",
+      "en": "Simulation · Audio"
     },
     "src": "assets/videos/demo-29.mp4?v=compressed-1",
     "poster": "assets/posters/demo-29.jpg"
@@ -714,16 +714,16 @@ window.DEMOS = [
     "height": 1080,
     "category": "钢琴演奏",
     "title": {
-      "zh": "Going Up Yonder Improvisation｜钢琴仿真",
-      "en": "Going Up Yonder Improvisation — piano simulation"
+      "zh": "Going Up Yonder Improvisation",
+      "en": "Going Up Yonder Improvisation"
     },
     "caption": {
-      "zh": "以 Going Up Yonder Improvisation 展示双臂与灵巧手的运动学轨迹优化演示。琴键高亮标出按键位置，多个视角同步呈现仿真演奏与原声。",
-      "en": "Going Up Yonder Improvisation demonstrates kinematic trajectory optimization for arms and dexterous hands. Highlighted keys mark key presses as the simulated performance is shown from multiple viewpoints with its original soundtrack."
+      "zh": "通过轨迹优化生成双手演奏动作。",
+      "en": "Piano motion generated through trajectory optimization."
     },
     "tag": {
-      "zh": "仿真 · 轨迹优化 · 有声",
-      "en": "Simulation · trajectory optimization · Audio"
+      "zh": "仿真 · 有声",
+      "en": "Simulation · Audio"
     },
     "src": "assets/videos/demo-30.mp4?v=compressed-1",
     "poster": "assets/posters/demo-30.jpg"

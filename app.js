@@ -4,7 +4,7 @@
  ['强化学习','强化学习','Reinforcement learning','掌内旋转、手臂协作与双手运动。保留训练过程和不同阶段的演示。','In-hand rotation, arm–hand coordination and bimanual motion, including work in training.'],
  ['数据采集','数据采集','Data collection','从真人示教到机器人执行，浏览高效采集多模态操作数据的现场案例。','From human demonstration to robot execution, explore examples of efficient multimodal manipulation data collection.'],
  ['解魔方','解魔方','Rubik’s Cube solving','使用策略控制灵巧手完成魔方复原，观察动作序列与状态反馈。','Policy-controlled Rubik’s Cube solving with action sequences and state feedback.'],
- ['钢琴演奏','钢琴演奏','Piano performance','双臂与灵巧手协同演奏。包含运动学轨迹优化与按键训练演示，有原声的片段保留声音。','Coordinated piano playing with arms and dexterous hands, from kinematic trajectory optimization to key-press training. Original audio is preserved where available.'],
+ ['钢琴演奏','钢琴演奏','Piano','双臂与灵巧手协同演奏。','Piano playing with coordinated arms and dexterous hands.'],
  ['模仿学习','模仿学习','Imitation learning','从桌面抓取到抽屉任务，观察示教驱动的操作与并行仿真回放。','Demonstration-driven manipulation, from tabletop grasps to drawer tasks and parallel simulated rollouts.'],
  ['触觉','触觉','Tactile sensing','观察接触位置、指尖形变与全手压力，以及操作过程中的同步数据。','Explore contact locations, fingertip deformation, whole-hand pressure and synchronized manipulation data.'],
  ['retargeting','动作重定向','Retargeting','将手套捕捉到的人手动作映射到 Revo3，展示手指跟随与拇指对指。','Map glove-captured human motion onto Revo3, including finger following and thumb opposition.'],
