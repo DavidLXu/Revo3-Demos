@@ -756,8 +756,8 @@ window.DEMOS = [
   {
     "id": "demo-32",
     "path": "revo3_retargeting.mp4",
-    "duration": 18.9,
-    "size": 924108,
+    "duration": 15.9,
+    "size": 1525283,
     "codec_name": "h264",
     "codec_type": "video",
     "width": 568,
@@ -775,8 +775,8 @@ window.DEMOS = [
       "zh": "真机 · 遥操作",
       "en": "Real robot · teleoperation"
     },
-    "src": "assets/videos/demo-32.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-32.jpg"
+    "src": "assets/videos/demo-32.mp4?v=trim-start-3s",
+    "poster": "assets/posters/demo-32.jpg?v=trim-start-3s"
   },
   {
     "id": "demo-33",
