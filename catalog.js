@@ -579,31 +579,6 @@ window.DEMOS = [
     "poster": "assets/posters/demo-24.jpg"
   },
   {
-    "id": "demo-25",
-    "path": "revotron_002_prelude_and_fugue_f_minor.mp4",
-    "category": "钢琴演奏",
-    "duration": 297.066,
-    "size": 121633750,
-    "codec_name": "h264",
-    "codec_type": "video",
-    "width": 1920,
-    "height": 1080,
-    "title": {
-      "zh": "巴赫｜F 小调前奏曲与赋格，BWV 881",
-      "en": "Bach — Prelude and Fugue in F minor, BWV 881"
-    },
-    "caption": {
-      "zh": "双手演奏巴赫，彩色琴键标出按键位置。",
-      "en": "Bach in simulation, with highlighted key presses."
-    },
-    "tag": {
-      "zh": "仿真 · 有声",
-      "en": "Simulation · Audio"
-    },
-    "src": "assets/videos/demo-25.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-25.jpg"
-  },
-  {
     "id": "demo-26",
     "path": "revotron_003_presentation.mp4",
     "category": "钢琴演奏",
@@ -652,56 +627,6 @@ window.DEMOS = [
     },
     "src": "assets/videos/demo-27.mp4?v=compressed-1",
     "poster": "assets/posters/demo-27.jpg"
-  },
-  {
-    "id": "demo-28",
-    "path": "revotron_009_presentation.mp4",
-    "duration": 287.146,
-    "size": 125951349,
-    "codec_name": "h264",
-    "codec_type": "video",
-    "width": 1920,
-    "height": 1080,
-    "category": "钢琴演奏",
-    "title": {
-      "zh": "Black Pearl",
-      "en": "Black Pearl"
-    },
-    "caption": {
-      "zh": "橙蓝色琴键分别标出双手的按键位置。",
-      "en": "Orange and blue keys highlight each hand’s notes."
-    },
-    "tag": {
-      "zh": "仿真 · 有声",
-      "en": "Simulation · Audio"
-    },
-    "src": "assets/videos/demo-28.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-28.jpg"
-  },
-  {
-    "id": "demo-29",
-    "path": "revotron_011_presentation.mp4",
-    "duration": 230.229,
-    "size": 98171090,
-    "codec_name": "h264",
-    "codec_type": "video",
-    "width": 1920,
-    "height": 1080,
-    "category": "钢琴演奏",
-    "title": {
-      "zh": "What Is This Thing Called Love",
-      "en": "What Is This Thing Called Love"
-    },
-    "caption": {
-      "zh": "双臂与手指协同完成演奏。",
-      "en": "Coordinated arm and finger motion across the keyboard."
-    },
-    "tag": {
-      "zh": "仿真 · 有声",
-      "en": "Simulation · Audio"
-    },
-    "src": "assets/videos/demo-29.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-29.jpg"
   },
   {
     "id": "demo-30",
