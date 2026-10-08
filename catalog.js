@@ -639,12 +639,12 @@ window.DEMOS = [
     "height": 320,
     "category": "retargeting",
     "title": {
-      "zh": "Manus 手套与真机动作重定向",
-      "en": "Manus glove-to-robot retargeting"
+      "zh": "动作重定向与速度展示",
+      "en": "Retargeting and speed showcase"
     },
     "caption": {
-      "zh": "佩戴 Manus 手套的手与 Revo3 真机同框展示，连续切换张手、握合和单指动作，直观看到人手姿态到机器人手指的映射。",
-      "en": "A Manus-gloved hand and the physical Revo3 appear side by side, switching between open-hand, closing and individual-finger gestures to show human-to-robot motion mapping."
+      "zh": "Revo3 实时跟随 Manus 手套动作，展示灵敏的手指侧摆自由度、快速运动与迅速响应。",
+      "en": "Revo3 follows Manus glove motions in real time, showcasing responsive finger abduction/adduction, fast movement and quick reactions."
     },
     "tag": {
       "zh": "真机 · 遥操作",
