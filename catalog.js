@@ -711,8 +711,8 @@ window.DEMOS = [
       "强化学习",
       "解魔方"
     ],
-    "duration": 56.35,
-    "size": 9684247,
+    "duration": 37.566016,
+    "size": 4226104,
     "codec_type": "video",
     "codec_name": "h264",
     "width": 1280,
@@ -726,10 +726,10 @@ window.DEMOS = [
       "en": "The dexterous hand executes a policy sequence to solve a Rubik’s Cube after a 10-move scramble, with side, overhead, action-goal and state readouts shown together."
     },
     "tag": {
-      "zh": "仿真 · 强化学习 · 解魔方",
-      "en": "Simulation · reinforcement learning · Rubik’s Cube"
+      "zh": "仿真 · 强化学习 · 解魔方 · 1.5 倍速",
+      "en": "Simulation · reinforcement learning · Rubik’s Cube · 1.5× speed"
     },
-    "src": "assets/videos/demo-35.mp4?v=compressed-1",
+    "src": "assets/videos/demo-35.mp4?v=speed1-5x-1",
     "poster": "assets/posters/demo-35.jpg"
   },
   {
