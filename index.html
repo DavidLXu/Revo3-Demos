@@ -5,18 +5,18 @@
 <title>Revo3 — Demo Collection</title>
 <meta name="description" content="Revo3 灵巧手演示集合：遥操作、强化学习、模仿学习、触觉、钢琴演奏、抓取生成与第一视角数据处理。">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310191e'/%3E%3Ctext x='7' y='24' font-size='25' font-family='Georgia' fill='white'%3ER%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=training-stack-1"><script src="catalog.js?v=piano-reduced-1" defer></script><script src="app.js?v=piano-reduced-1" defer></script>
+<link rel="stylesheet" href="styles.css?v=training-stack-1"><script src="catalog.js?v=workflow-order-1" defer></script><script src="app.js?v=workflow-order-1" defer></script>
 </head>
 <body>
 <a class="skip" href="#collection" data-zh="跳至演示集合" data-en="Skip to demos">跳至演示集合</a>
 <header class="masthead" id="top">
  <nav class="wrap topnav"><a class="wordmark" href="#top">Revo3<span>.</span></a><div class="nav-right"><a href="https://davidlxu.github.io/RevoSim-web/" target="_blank" rel="noopener">RevoSim ↗</a><div class="languages" aria-label="Language"><button type="button" data-lang="zh" aria-pressed="true">中文</button><span>/</span><button type="button" data-lang="en" aria-pressed="false">EN</button></div></div></nav>
- <div class="wrap intro"><div><p class="eyebrow">BRAINCO · DEXTEROUS MANIPULATION</p><h1>Revo3 <em>in action.</em></h1><p class="intro-copy" data-zh="从人手动作到机器人操作。探索灵巧手的学习、控制与触觉。" data-en="From human motion to robot manipulation. Explore dexterous learning, control and touch.">从人手动作到机器人操作。探索灵巧手的学习、控制与触觉。</p></div><div class="index-mark"><strong>31</strong><span data-zh="段演示 / 9 个方向" data-en="DEMOS / 9 DIRECTIONS">段演示 / 9 个方向</span></div></div>
+ <div class="wrap intro"><div><p class="eyebrow">BRAINCO · DEXTEROUS MANIPULATION</p><h1>Revo3 <em>in action.</em></h1><p class="intro-copy" data-zh="从人手动作到机器人操作。探索灵巧手的学习、控制与触觉。" data-en="From human motion to robot manipulation. Explore dexterous learning, control and touch.">从人手动作到机器人操作。探索灵巧手的学习、控制与触觉。</p></div><div class="index-mark"><strong>30</strong><span data-zh="段演示 / 9 个方向" data-en="DEMOS / 9 DIRECTIONS">段演示 / 9 个方向</span></div></div>
 </header>
 <section class="wrap ecosystem" id="ecosystem" aria-labelledby="ecosystem-title">
  <div class="ecosystem-heading"><div><p class="eyebrow">THE REVO3 ECOSYSTEM</p><h2 id="ecosystem-title" data-zh="从仿真到真机" data-en="From simulation to real robots">从仿真到真机</h2></div></div>
  <div class="ecosystem-lane">
-  <div class="lane-label"><span class="lane-index">01</span><h3 data-zh="仿真生态" data-en="Simulation">仿真生态</h3><p data-zh="共同的仿真基础" data-en="A shared simulation foundation">共同的仿真基础</p></div>
+  <div class="lane-label"><span class="lane-index">01</span><h3 data-zh="仿真生态" data-en="Simulation">仿真生态</h3><p data-zh="Real-to-sim-to-real, SysID" data-en="Real-to-sim-to-real, SysID">Real-to-sim-to-real, SysID</p></div>
   <div class="simulation-flow">
    <a class="ecosystem-node sim-source" href="https://davidlxu.github.io/RevoSim-web/" target="_blank" rel="noopener"><span class="node-heading">RevoSim <span class="external-arrow" aria-hidden="true">↗</span></span><p data-zh="全机器人与灵巧手触觉仿真" data-en="Whole-robot and dexterous-hand tactile simulation">全机器人与灵巧手触觉仿真</p><span class="node-footnote" data-zh="仿真基础平台" data-en="Simulation foundation">仿真基础平台</span></a>
    <svg class="sim-branches" viewBox="0 0 80 240" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="branch-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L6 4L1 7" fill="none" stroke="#4d8997" stroke-width="1.5"/></marker></defs><path d="M0 120H30Q40 120 40 110V70Q40 60 50 60H77M40 110V170Q40 180 50 180H77" fill="none" stroke="#4d8997" stroke-width="1.5" marker-end="url(#branch-arrow)"/><path d="M65 60H77" fill="none" stroke="#4d8997" stroke-width="1.5" marker-end="url(#branch-arrow)"/></svg>
@@ -27,7 +27,7 @@
   </div>
  </div>
  <div class="ecosystem-lane real-lane">
-  <div class="lane-label"><span class="lane-index">02</span><h3 data-zh="真机流程" data-en="Real robots">真机流程</h3><p data-zh="从示教到执行" data-en="From demonstration to execution">从示教到执行</p></div>
+  <div class="lane-label"><span class="lane-index">02</span><h3 data-zh="真机流程" data-en="Real robots">真机流程</h3><p data-zh="后训练基础设施与流程" data-en="Post-training infra and pipeline">后训练基础设施与流程</p></div>
   <ol class="robot-flow">
    <li class="ecosystem-node"><span class="stage-number">01</span><h4 data-zh="遥操作" data-en="Teleoperation">遥操作</h4><ul class="node-modules"><li>Hand Retargeting</li><li>Arm IK</li></ul></li>
    <li class="ecosystem-node"><span class="stage-number">02</span><h4 data-zh="数据采集" data-en="Data collection">数据采集</h4><ul class="node-modules"><li>frame alignment</li><li>UI</li></ul></li>

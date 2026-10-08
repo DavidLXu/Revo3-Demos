@@ -328,8 +328,8 @@ window.DEMOS = [
     "id": "demo-15",
     "path": "模仿学习/revotron-两物体泛化位置-RTC.MP4",
     "category": "模仿学习",
-    "duration": 181.4,
-    "size": 111558765,
+    "duration": 45.333333,
+    "size": 4774704,
     "codec_name": "h264",
     "codec_type": "video",
     "width": 960,
@@ -343,36 +343,11 @@ window.DEMOS = [
       "en": "Across repeated demonstrations with varying tabletop object positions, the arms reach, grasp and place the objects."
     },
     "tag": {
-      "zh": "真机",
-      "en": "Real robot"
+      "zh": "真机 · 4 倍速",
+      "en": "Real robot · 4× speed"
     },
-    "src": "assets/videos/demo-15.mp4?v=compressed-1",
+    "src": "assets/videos/demo-15.mp4?v=speed4x-1",
     "poster": "assets/posters/demo-15.jpg"
-  },
-  {
-    "id": "demo-16",
-    "path": "模仿学习/revotron-仿真-push_t_20_grid.mp4",
-    "category": "模仿学习",
-    "duration": 6.0,
-    "size": 654225,
-    "codec_name": "h264",
-    "codec_type": "video",
-    "width": 1280,
-    "height": 1120,
-    "title": {
-      "zh": "20 路 Push-T 并行回放",
-      "en": "20 parallel Push-T rollouts"
-    },
-    "caption": {
-      "zh": "20 个仿真实例并排展示灵巧手推动 T 形物体的过程，对照不同初始状态下的运动轨迹。",
-      "en": "Twenty simulated rollouts show hands pushing T-shaped objects, allowing side-by-side comparison of motion from different initial states."
-    },
-    "tag": {
-      "zh": "仿真",
-      "en": "Simulation"
-    },
-    "src": "assets/videos/demo-16.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-16.jpg"
   },
   {
     "id": "demo-17",
