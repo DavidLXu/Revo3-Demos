@@ -250,31 +250,6 @@ window.DEMOS = [
     "poster": "assets/posters/demo-11.jpg"
   },
   {
-    "id": "demo-12",
-    "path": "强化学习/revotron-仿真-钢琴.mp4",
-    "category": "钢琴演奏",
-    "duration": 115.871542,
-    "size": 15321893,
-    "codec_name": "h264",
-    "codec_type": "video",
-    "width": 1280,
-    "height": 720,
-    "title": {
-      "zh": "双臂钢琴演奏仿真",
-      "en": "Bimanual piano simulation"
-    },
-    "caption": {
-      "zh": "双臂与手指协同演奏的仿真展示。",
-      "en": "Simulated piano playing with coordinated arms and fingers."
-    },
-    "tag": {
-      "zh": "仿真",
-      "en": "Simulation"
-    },
-    "src": "assets/videos/demo-12.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-12.jpg"
-  },
-  {
     "id": "demo-13",
     "path": "强化学习/弹钢琴1.mp4",
     "category": "钢琴演奏",
