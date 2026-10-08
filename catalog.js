@@ -303,8 +303,8 @@ window.DEMOS = [
     "id": "demo-14",
     "path": "模仿学习/revotron-rtc-长程任务.mp4",
     "category": "模仿学习",
-    "duration": 17.866667,
-    "size": 2866363,
+    "duration": 23.833333,
+    "size": 3315841,
     "codec_name": "h264",
     "codec_type": "video",
     "width": 1280,
@@ -318,10 +318,10 @@ window.DEMOS = [
       "en": "Two arms coordinate a sequence involving opening a drawer, moving an object and closing the drawer."
     },
     "tag": {
-      "zh": "真机 · 2 倍速",
-      "en": "Real robot · 2× speed"
+      "zh": "真机 · 1.5 倍速",
+      "en": "Real robot · 1.5× speed"
     },
-    "src": "assets/videos/demo-14.mp4?v=speed2x-1",
+    "src": "assets/videos/demo-14.mp4?v=speed1-5x-1",
     "poster": "assets/posters/demo-14.jpg"
   },
   {
