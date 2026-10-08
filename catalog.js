@@ -85,12 +85,12 @@ window.DEMOS = [
     "width": 960,
     "height": 544,
     "title": {
-      "zh": "拇指对指与动作映射",
-      "en": "Thumb opposition retargeting"
+      "zh": "MuJoCo 动作重定向",
+      "en": "Retargeting in MuJoCo"
     },
     "caption": {
-      "zh": "佩戴 Manus 手套完成拇指对指和手指开合，屏幕中的机器人手模型同步显示映射后的姿态。",
-      "en": "Thumb-to-finger opposition and finger flexion from a Manus glove are mapped onto a robot-hand model shown on screen."
+      "zh": "将 Manus 手套捕捉的人手动作重定向至 MuJoCo 灵巧手模型，展示复杂的对指与捻搓动作。",
+      "en": "Manus glove motions are retargeted to a dexterous hand in MuJoCo, demonstrating complex thumb-to-finger opposition, rolling and rubbing motions."
     },
     "tag": {
       "zh": "遥操作",
