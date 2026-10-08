@@ -225,31 +225,6 @@ window.DEMOS = [
     "poster": "assets/posters/demo-10.jpg"
   },
   {
-    "id": "demo-11",
-    "path": "强化学习/revotron-juggling.mp4",
-    "category": "强化学习",
-    "duration": 12.0,
-    "size": 12651846,
-    "codec_name": "h264",
-    "codec_type": "video",
-    "width": 1920,
-    "height": 1080,
-    "title": {
-      "zh": "双手抛接球训练片段",
-      "en": "Bimanual juggling training"
-    },
-    "caption": {
-      "zh": "仿真中双手尝试抛接彩球，主视角与双手近景同步回放；画面包含训练中的掉球与重置。",
-      "en": "A simulated robot attempts to juggle colored balls, with synchronized full-body and hand views. The training clip includes dropped balls and resets."
-    },
-    "tag": {
-      "zh": "仿真 · 训练中",
-      "en": "Simulation · training"
-    },
-    "src": "assets/videos/demo-11.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-11.jpg"
-  },
-  {
     "id": "demo-13",
     "path": "强化学习/弹钢琴1.mp4",
     "category": "钢琴演奏",
@@ -348,31 +323,6 @@ window.DEMOS = [
     },
     "src": "assets/videos/demo-17.mp4?v=compressed-1",
     "poster": "assets/posters/demo-17.jpg"
-  },
-  {
-    "id": "demo-18",
-    "path": "触觉/kitchen_rerun.mp4",
-    "category": "触觉",
-    "duration": 96.3,
-    "size": 23418628,
-    "codec_name": "h264",
-    "codec_type": "video",
-    "width": 2560,
-    "height": 1600,
-    "title": {
-      "zh": "厨房场景多模态回放",
-      "en": "Kitchen-scene multimodal replay"
-    },
-    "caption": {
-      "zh": "在厨房物体操作场景中，同时查看相机视角、掌面接触、指尖触觉图像与记录曲线。",
-      "en": "Camera views, palm contact, fingertip tactile images and recorded signal traces are presented together during kitchen-object manipulation."
-    },
-    "tag": {
-      "zh": "仿真 · 数据回放",
-      "en": "Simulation · data replay"
-    },
-    "src": "assets/videos/demo-18.mp4?v=compressed-1",
-    "poster": "assets/posters/demo-18.jpg"
   },
   {
     "id": "demo-19",
@@ -489,12 +439,12 @@ window.DEMOS = [
     "width": 1728,
     "height": 1080,
     "title": {
-      "zh": "LeRobot 多模态数据展示",
-      "en": "LeRobot multimodal data visualization"
+      "zh": "厨房场景多模态回放",
+      "en": "Kitchen-scene multimodal replay"
     },
     "caption": {
-      "zh": "机器人操作与相机、全手压力、指尖触觉和时序曲线并排展示，观察一次操作中的多模态记录。",
-      "en": "Robot manipulation is shown alongside camera feeds, whole-hand pressure, fingertip touch and time-series traces from the same recording."
+      "zh": "在厨房物体操作场景中，同时查看相机视角、掌面接触、指尖触觉图像与记录曲线。",
+      "en": "Camera views, palm contact, fingertip tactile images and recorded signal traces are presented together during kitchen-object manipulation."
     },
     "tag": {
       "zh": "仿真 · 数据回放",
