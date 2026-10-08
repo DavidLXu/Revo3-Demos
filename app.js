@@ -94,3 +94,35 @@
  document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;try{localStorage.setItem('revo3-language',lang)}catch{}render()}));
  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&player.open)keepAwake();else if(document.hidden&&!player.open)pauseAll()});render();
 })();
+
+// Animate native disclosures while retaining keyboard and no-JavaScript support.
+document.querySelectorAll('.infra-disclosure').forEach(details=>{
+ const summary=details.querySelector(':scope > summary');
+ const content=details.querySelector(':scope > .infra-content');
+ const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+ let animation=null, expanded=details.open;
+ summary.setAttribute('aria-expanded',String(expanded));
+ details.addEventListener('toggle',()=>{
+  if(!animation){expanded=details.open;summary.setAttribute('aria-expanded',String(expanded))}
+ });
+ summary.addEventListener('click',event=>{
+  event.preventDefault();
+  const from=details.open?content.getBoundingClientRect().height:0;
+  expanded=animation?!expanded:!details.open;
+  if(animation){animation.cancel();animation=null}
+  summary.setAttribute('aria-expanded',String(expanded));
+  if(reducedMotion.matches){details.open=expanded;details.classList.remove('is-animating');return}
+  details.open=true;
+  const to=expanded?content.scrollHeight:0;
+  details.classList.add('is-animating');
+  const current=content.animate([{height:`${from}px`},{height:`${to}px`}],{duration:280,easing:'cubic-bezier(.22,1,.36,1)',fill:'both'});
+  animation=current;
+  current.finished.then(()=>{
+   if(animation!==current)return;
+   details.open=expanded;
+   animation=null;
+   current.cancel();
+   details.classList.remove('is-animating');
+  }).catch(()=>{});
+ });
+});
