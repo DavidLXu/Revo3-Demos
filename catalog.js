@@ -35,12 +35,12 @@ window.DEMOS = [
     "width": 1280,
     "height": 780,
     "title": {
-      "zh": "EgoDex 双臂动作重建",
-      "en": "EgoDex bimanual motion replay"
+      "zh": "EgoDex 伪动作标注",
+      "en": "EgoDex pseudo-action labeling"
     },
     "caption": {
-      "zh": "将第一视角桌面操作与 RevoTron 仿真动作对照回放，同时展示双臂和双手的关节轨迹。",
-      "en": "A tabletop egocentric demonstration is replayed alongside RevoTron in simulation, with joint trajectories for both arms and hands."
+      "zh": "从第一视角示范生成机器人双臂与双手的伪动作标签，为机器人后训练构建数据。",
+      "en": "Generate pseudo-action labels for robot arms and hands from egocentric demonstrations to build data for robot post-training."
     },
     "tag": {
       "zh": "数据处理",
