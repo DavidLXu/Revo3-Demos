@@ -382,8 +382,8 @@ window.DEMOS = [
     "id": "demo-21",
     "path": "触觉/revo3-伟钛视触觉-箭头上位机.MP4",
     "category": "触觉",
-    "duration": 18,
-    "size": 2838643,
+    "duration": 19,
+    "size": 3065934,
     "codec_name": "h264",
     "codec_type": "video",
     "width": 1280,
@@ -400,7 +400,7 @@ window.DEMOS = [
       "zh": "真机 · 触觉",
       "en": "Real robot · tactile"
     },
-    "src": "assets/videos/demo-21.mp4?v=trim18-1",
+    "src": "assets/videos/demo-21.mp4?v=trim19-1",
     "poster": "assets/posters/demo-21.jpg"
   },
   {
