@@ -709,5 +709,30 @@ window.DEMOS = [
     },
     "src": "assets/videos/demo-36.mp4?v=compressed-1",
     "poster": "assets/posters/demo-36.jpg"
+  },
+  {
+    "id": "demo-37",
+    "path": "bionic_silver_gestures_2x_60fps.mp4",
+    "category": "real-to-sim",
+    "duration": 12,
+    "size": 2111658,
+    "codec_name": "h264",
+    "codec_type": "video",
+    "width": 1024,
+    "height": 1024,
+    "title": {
+      "zh": "高保真灵巧手 Real-to-sim",
+      "en": "High-fidelity dexterous hand real-to-sim"
+    },
+    "caption": {
+      "zh": "银色 Revo3 的高保真仿真模型展示握拳、伸指与多种手势，从不同视角呈现手部外形、关节结构及运动。",
+      "en": "A high-fidelity simulation of the silver Revo3 hand demonstrates fist closure, finger extension and varied gestures, showing its geometry, joint structure and motion from multiple viewpoints."
+    },
+    "tag": {
+      "zh": "仿真 · 高保真建模",
+      "en": "Simulation · high-fidelity modeling"
+    },
+    "src": "assets/videos/demo-37.mp4?v=real-to-sim-1",
+    "poster": "assets/posters/demo-37.jpg"
   }
 ];

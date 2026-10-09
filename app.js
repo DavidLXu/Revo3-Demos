@@ -1,19 +1,20 @@
 (() => {
  const groups=[
- ['all','全部演示','All demos','从动作映射到全手触觉，浏览 9 个方向的真机、仿真与数据演示。','Browse real-robot, simulation and data demonstrations across nine directions.'],
+ ['all','全部演示','All demos','从动作映射到全手触觉，浏览 10 个方向的真机、仿真与数据演示。','Browse real-robot, simulation and data demonstrations across ten directions.'],
  ['强化学习','强化学习','RL','掌内旋转、手臂协作与双手运动。保留训练过程和不同阶段的演示。','In-hand rotation, arm–hand coordination and bimanual motion, including work in training.'],
  ['数据采集','数据采集','Data collection','从真人示教到机器人执行，浏览高效采集多模态操作数据的现场案例。','From human demonstration to robot execution, explore examples of efficient multimodal manipulation data collection.'],
  ['解魔方','解魔方',"Rubik's cube",'使用策略控制灵巧手完成魔方复原，观察动作序列与状态反馈。','Policy-controlled Rubik’s Cube solving with action sequences and state feedback.'],
  ['钢琴演奏','钢琴演奏','Piano','双臂与灵巧手协同演奏。','Piano playing with coordinated arms and dexterous hands.'],
  ['模仿学习','模仿学习','Imitation learning','从桌面抓取到抽屉任务，观察示教驱动的操作与并行仿真回放。','Demonstration-driven manipulation, from tabletop grasps to drawer tasks and parallel simulated rollouts.'],
  ['触觉','触觉','tactile','观察接触位置、指尖形变与全手压力，以及操作过程中的同步数据。','Explore contact locations, fingertip deformation, whole-hand pressure and synchronized manipulation data.'],
+ ['real-to-sim','Real-to-sim','Real-to-sim','将真实灵巧手的外形与关节运动带入仿真，展示高保真数字模型。','Bring real dexterous-hand geometry and joint motion into simulation with high-fidelity digital models.'],
  ['retargeting','动作重定向','Retargeting','将手套捕捉到的人手动作映射到 Revo3，展示手指跟随与拇指对指。','Map glove-captured human motion onto Revo3, including finger following and thumb opposition.'],
  ['优化生成','优化生成','Grasp generation','面向不同物体几何形状，展示生成的抓取姿态与接触配置。','Generated grasp poses and contact configurations for a variety of object geometries.'],
  ['Ego数据处理','Ego 数据处理','Ego data','将第一视角的人手操作重建为机器人可回放的手部和双臂动作。','Reconstruct egocentric demonstrations as hand and bimanual robot motion.']
  ];
  let lang='zh';try{lang=localStorage.getItem('revo3-language')||'zh'}catch{}if(!['zh','en'].includes(lang))lang='zh';
  let selected='all';const grid=document.querySelector('#demo-grid'),nav=document.querySelector('#categories');
- const order=[36,15,14,2,35,10,7,4,32,21,34,5,1,8,9,31,33,19,20,22,17,23,24,26,27,30,13];
+ const order=[36,15,14,2,35,10,7,37,4,32,21,34,5,1,8,9,31,33,19,20,22,17,23,24,26,27,30,13];
  const demos=order.map(n=>window.DEMOS.find(d=>d.id===`demo-${String(n).padStart(2,'0')}`));
  const categories=d=>d.categories||[d.category];
  const belongs=(d,category)=>categories(d).includes(category);
